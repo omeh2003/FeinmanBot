@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  web:
+    image: omeh2003/feiman:latest
+    container_name: feiman
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .env:/app/.env
+
+
+
